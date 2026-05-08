@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($tools = @\\('gofmt','go','gopls'\\); foreach \\($t in $tools\\) { $cmd = Get-Command $t -ErrorAction SilentlyContinue; if \\($cmd\\) { \"$t -> $\\($cmd.Source\\)\" } else { \"$t -> NOT FOUND\" } }; \"---\"; $userTools = @\\('golint','staticcheck','golangci-lint'\\); foreach \\($t in $userTools\\) { $cmd = Get-Command $t -ErrorAction SilentlyContinue; if \\($cmd\\) { \"$t -> $\\($cmd.Source\\)\" } else { \"$t -> NOT FOUND\" } })"
+    ]
+  }
+}
